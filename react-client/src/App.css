@@ -1,0 +1,15 @@
+input{
+  display: block;
+}
+
+label, input,button,h1{
+  margin: 5px;
+}
+
+label{
+  font-weight: bold;
+}
+
+.error{
+  color:red;
+}
