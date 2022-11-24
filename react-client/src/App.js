@@ -18,7 +18,7 @@ function App() {
 
   //Logging out -> server ends the session
   function logout(){
-    axios.get(URL+"rest_logout.php", {withCredentials:true} )
+    axios.post(URL+"rest_logout.php", {}, {withCredentials:true} )
       .then(resp => setLoggedUser(null))
       .catch(e => console.log(e.message));
   }
